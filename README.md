@@ -2,7 +2,7 @@
 
 ## Get started
  
-Clone: `git clone git@github.com:wix-private/Premium-QA-Sled.git`
+Clone: `git clone git@github.com:OriKedar/cypress.git`
 
 Install: `npm i` in the project root directory
 
