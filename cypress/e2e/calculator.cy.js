@@ -18,12 +18,12 @@ context('Calculator test file', () => {
         })
     });
 
-    it('Should calculate 1+1 = 2', () => {
-        cy.genericCalculation(["1+1", "=", "2"])
+    it('Should calculate 4+1 = 5', () => {
+        cy.genericCalculation(["4+1", "=", "5"])
     })
 
-    it('Should calculate 2+2 = 4', () => {
-        cy.genericCalculation(['2+2', '=', '4'])
+    it('Should calculate 12 - 6 = 6', () => {
+        cy.genericCalculation(['12-6', '=', '6'])
     })
 
     it('Should calculate (14 - 2) * 2 != 20', () => {
