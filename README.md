@@ -1,13 +1,14 @@
-# Cypress calculator e2e test 
+# Cypress e2e example 
 
 ## Get started
  
-Clone: `git clone git@github.com:OriKedar/cypress.git`
+Clone: `git clone git@github.com:OriKedar/cypressJs.git`
 
 Install: `npm i` in the project root directory
 
 ## Run the tests
 
-Run from CLI: `cy:calc`  
+Run from CLI: `npm run cy:<testSuite>`
 
-Run from Cypress application: `cy:open` and open the `calculator.cy.js` spec file
+Run from Cypress application: `npm run cy:open` and open choose the the test suite spec file.
+

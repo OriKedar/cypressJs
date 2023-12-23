@@ -1,15 +1,18 @@
 {
   "name": "cy-calc",
   "version": "1.0.0",
-  "description": "Cypress calculator tests",
+  "description": "Cypress tests example",
   "main": "cypress.config.js",
   "scripts": {
     "cy:open": "npx cypress open",
-    "cy:calc": "npx cypress run '/cypress/e2e/calculator.cy.js'"
+    "cy:calc": "npx cypress run -b chrome -s 'cypress/e2e/calculator.cy.js'",
+    "cy:api": "npx cypress run -s 'cypress/e2e/api.cy.js'",
+    "cy:target": "npx cypress run -s 'cypress/e2e/target.cy.js'",
+    "cy:sauce": "npx cypress run -b chrome -s 'cypress/e2e/sauce.cy.js'"
   },
   "author": "Ori Kedar",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^11.2.0"
+    "cypress": "^13.6.1"
   }
 }
