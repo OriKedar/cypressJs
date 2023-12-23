@@ -21,13 +21,6 @@ context('Calculator test file', () => {
         cy.get('[id="histframe"]').find('li').should('have.length', '4')
     });
 
-    it('Should open Google', () => {
-        cy.visit('https://www.google.com/');
-        cy.screenshot('Google', { capture: 'fullPage'});
-
-
-    })
-
     // it('Should open history tray', () => {
     //     cy.get('[type="button"][class="btn dropdown-toggle pull-right"]').click({force: true})
     //     cy.get('[id="clearhistory"]').click()

@@ -9,10 +9,12 @@ class HomePage {
     }
 
     async openSingIn() {
+        Cypress.log('Starting Login');
         await cy.get('[data-test="@web/AccountLink"]').click();
-        //not working, need to be fix
+        await cy.log('account link is open');
+        await cy.get('[class="ReactModal__Overlay ReactModal__Overlay--after-open][data-test="@web/OverlayModal"]');
         await cy.get('[data-test="accountNav-signIn"]').click();
-
+        await cy.visit('https://www.target.com/login')
         await cy.url().should('contain', '/login');
     }
 
